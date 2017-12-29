@@ -1,8 +1,10 @@
 cp -a config/i3 ~/.config
 cp -a config/polybar ~/.config
 cp config/compton.conf ~/.config
+cp config/.extend.Xresources ~/
+cp config/.Xresources ~/ 
 
-sudo zypper in i3-gaps rofi compton i3-gaps-devel libcairo2 cairo-devel python2-cairo python2-cairo-devel cmake patterns-devel-base-devel_basis patterns-devel-C-C++-devel_C_C++ patterns-yast-x11_yast patterns-fonts-fonts patterns-fonts-fonts_opt patterns-base-enhanced_base patterns-base-x11 patterns-base-x11_opt libxcb-devel python xcb-proto-devel xcb-util-image-devel xcb-util-wm-devel xcb-util-xrm-devel rxvt-unicode nitrogen
+sudo zypper in i3-gaps rofi compton i3-gaps-devel libcairo2 cairo-devel python2-cairo python2-cairo-devel cmake patterns-devel-base-devel_basis patterns-devel-C-C++-devel_C_C++ patterns-yast-x11_yast patterns-fonts-fonts patterns-fonts-fonts_opt patterns-base-enhanced_base patterns-base-x11 patterns-base-x11_opt libxcb-devel python xcb-proto-devel xcb-util-image-devel xcb-util-wm-devel xcb-util-xrm-devel rxvt-unicode nitrogen psmisc
 
 rm -rf polybar
 git clone --branch 3.1.0 --recursive https://github.com/jaagr/polybar
