@@ -1,5 +1,0 @@
-2017-12-28 17:55:53.711 (0x7fffd3941220) Warning: "Icon Theme not set. Fallbacking to Oxygen, if installed"
-2017-12-28 17:55:53.714 (0x7fffd3941220) Warning: "Fallback Icon Theme (Oxygen) not found"
-2017-12-28 17:55:53.886 (0x7fffd3941220) Warning: QXcbConnection: XCB error: 170 (Unknown), sequence: 170, resource id: 90, major code: 146 (Unknown), minor code: 20
-2017-12-28 17:55:54.095 (0x7fffd3941220) Warning: No XVisualInfo for format QSurfaceFormat(version 2.0, options QFlags<QSurfaceFormat::FormatOption>(), depthBufferSize -1, redBufferSize 1, greenBufferSize 1, blueBufferSize 1, alphaBufferSize -1, stencilBufferSize -1, samples -1, swapBehavior QSurfaceFormat::SwapBehavior(SingleBuffer), swapInterval 1, profile  QSurfaceFormat::OpenGLContextProfile(NoProfile))
-2017-12-28 17:55:54.099 (0x7fffd3941220) Warning: Falling back to using screens root_visual.
