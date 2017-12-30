@@ -60,7 +60,7 @@ font-2 = FontAwesome:fontformat=truetype:size=9;1
 
 modules-left = i3 xwindow
 modules-center = date 
-modules-right = battery
+modules-right = eth wifi cpu battery
 
 tray-position = right
 tray-padding = 9
@@ -107,13 +107,50 @@ label-urgent-underline = ${colors.my_color8}
 label-urgent-padding = 2
 
 
-[module/wired-network]
-type = internal/network
-interface = eth0
+[module/cpu]
+type = internal/cpu
+interval = 2
+label-padding=2
+label = CPU: %percentage%%
 
-[module/wireless-network]
+[module/eth]
 type = internal/network
-interface = wlan1
+interface = eno1
+
+;[module/wifi]
+;type = internal/network
+;interface = wlo1
+
+
+
+
+
+
+[module/wifi]
+type = internal/network
+interface = wlo1
+interval = 3.0
+
+label-connected-padding=2
+label-disconnected-padding=2
+format-connected = <ramp-signal> <label-connected>
+label-connected = %essid% %{F#66}%local_ip%
+label-disconnected = %{F#666}%{F#ccfafafa} not connected
+label-disconnected-foreground = #66
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = #666
+
+
+
+
+
+
+
 
 [module/musicinfo]
 type = custom/script
