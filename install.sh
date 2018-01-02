@@ -5,7 +5,7 @@ cp config/.extend.Xresources ~/
 cp config/.Xresources ~/
 cp config/.xinitrc ~/
 
-sudo zypper in i3-gaps rofi compton i3-gaps-devel libcairo2 cairo-devel python2-cairo python2-cairo-devel cmake patterns-devel-base-devel_basis patterns-devel-C-C++-devel_C_C++ patterns-yast-x11_yast patterns-fonts-fonts patterns-fonts-fonts_opt patterns-base-enhanced_base patterns-base-x11 patterns-base-x11_opt libxcb-devel python xcb-proto-devel xcb-util-image-devel xcb-util-wm-devel xcb-util-xrm-devel rxvt-unicode nitrogen psmisc jsoncpp-devel libxcb-cursor0 alsa-devel libmpd-devel libcurl-devel wireless-tools libiw-devel libmpdclient-devel
+sudo zypper in i3-gaps rofi compton i3-gaps-devel libcairo2 cairo-devel python2-cairo python2-cairo-devel cmake patterns-devel-base-devel_basis patterns-devel-C-C++-devel_C_C++ patterns-yast-x11_yast patterns-fonts-fonts patterns-fonts-fonts_opt patterns-base-enhanced_base patterns-base-x11 patterns-base-x11_opt libxcb-devel python xcb-proto-devel xcb-util-image-devel xcb-util-wm-devel xcb-util-xrm-devel rxvt-unicode nitrogen psmisc jsoncpp-devel libxcb-cursor0 alsa-devel libmpd-devel libcurl-devel wireless-tools libiw-devel libmpdclient-devel gcc gcc-cpp
 
 killall -q polybar
 
