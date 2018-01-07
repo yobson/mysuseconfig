@@ -111,7 +111,7 @@ label-urgent-padding = 2
 type = internal/cpu
 interval = 2
 label-padding=2
-label = CPU: %percentage%%
+label = CPU:%percentage:3%%
 
 [module/eth]
 type = internal/network
