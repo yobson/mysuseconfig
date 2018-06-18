@@ -1,5 +1,6 @@
 cp -a config/i3 ~/.config
 cp -a config/polybar ~/.config
+cp -a config/rofi ~/.config
 cp config/compton.conf ~/.config
 cp config/.extend.Xresources ~/
 cp config/.Xresources ~/

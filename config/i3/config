@@ -52,7 +52,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -64,7 +64,7 @@ bindsym $mod+Shift+q kill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # bindsym $mod+d exec --no-startup-id rofi -show run
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -dmenu'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -show drun'
 
 
 # change focus
@@ -79,11 +79,6 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -140,6 +135,8 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+bindsym $mod+Shift+l exec --no-startup-id xscreensaver-command -lock
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
