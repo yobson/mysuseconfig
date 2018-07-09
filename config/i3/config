@@ -52,7 +52,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec konsole
+bindsym $mod+Return exec rxvt-unicode -e "/bin/bash"
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -64,7 +64,7 @@ bindsym $mod+Shift+q kill
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 # bindsym $mod+d exec --no-startup-id rofi -show run
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -show drun'
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -modi drun -show drun'
 
 
 # change focus
@@ -137,6 +137,9 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 bindsym $mod+Shift+l exec --no-startup-id xscreensaver-command -lock
+
+bindsym $mod+Control+Left move workspace to output left
+bindsym $mod+Control+Right move workspace to output right
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
