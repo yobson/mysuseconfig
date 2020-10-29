@@ -8,7 +8,7 @@ sudo zypper in i3-gaps rofi compton i3-gaps-devel libcairo2 cairo-devel \
     libxcb-cursor0 alsa-devel libmpd-devel libcurl-devel wireless-tools libiw-devel \
     libmpdclient-devel gcc gcc-cpp lxqt-sudo lxappearence gnu_parallel dunst
 
-ls config | parallel cp -a {} ~/.config/.
+cp -a config/* ~/.config/.
 
 killall -q polybar
 
