@@ -1,0 +1,21 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+    pager = true
+
+[alias]
+    br = branch
+    c = commit
+    cm = commit -m
+    cl = clone
+    co = checkout
+    last = log -1 HEAD
+    lastf = diff-tree --name-only -r HEAD
+    pl = pull
+    ps = push
+    ss = status -s -b
+    st = status
+
